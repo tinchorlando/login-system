@@ -1,0 +1,167 @@
+:root {
+    --main-color-primary : #394053;
+    --main-color-secondary: #fe7f2d;
+    --main-color-terciary: #acfcd9;
+    --font-color-disabled:#565360;
+    --font-color-label:#030000;
+    --font-color-text: #fffffd; 
+    --length-small-1: 0.25rem;
+    --length-small-2: 0.5rem;
+    --length-small-3: 0.75rem;
+    --length-medium-1:1rem;
+    --length-medium-2:1.25rem;
+    --length-medium-3:1.5rem;
+    --length-large-1: 2rem;
+    --length-large-2: 3rem;
+    --length-large-3: 4rem;
+    margin: 0 auto;
+    padding: 0 0;
+    box-sizing: content-box;
+    font-size: var(--length-medium-1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--font-color-text)
+    
+}
+#root{
+    width: 100%;
+    height: 100%;
+}
+body , #root{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    margin: 0 0;
+    background-color: var(--main-color-primary);
+}
+.center{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    list-style: none;
+}
+.btn, .linkbtn{
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--main-color-primary);
+    color: var(--font-color-text);
+    padding: 5px 15px;
+    /* box-shadow: 0 2px 2px lightgray; */;
+    cursor: pointer;
+    margin: 0 auto;
+    width: fit-content;
+    /* font-size: 14px; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    border: 1px solid var(--main-color-terciary);
+    text-decoration: none;
+    text-align: center;
+    line-height: 28px;
+}
+.btn.secondary{
+    background-color: var(--main-color-secondary);
+    border: 1px solid var(--main-color-primary);
+}
+.btn:hover, .linkbtn:hover{
+    box-shadow:none;
+    border:1px solid var(--main-color-primary);
+    background-color: var(--main-color-terciary);
+    color: var(--font-color-label);
+}
+
+.google-component{
+    display: flex;
+    justify-content: center;
+    margin: var(--length-large-1)
+}
+
+.bottom>*{
+    margin: 10px auto
+}
+
+.googleError{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 20px
+}
+#register{
+    display: flex;
+    flex-direction: column;
+}
+#app{
+    border-radius: 30px;
+    padding: var(--length-medium-3);
+    background-color: var(--main-color-secondary);
+    /* box shadow from https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(172,252,217,0.79);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(172,252,217,0.79);
+    box-shadow: 10px 10px 22px 0px rgba(172,252,217,0.79);
+    /*  */
+    max-width: 500px;
+    margin: 0 auto;
+    height: fit-content;
+    margin-top: var(--length-large-1);
+    transition: all ease-in-out 1s;
+}
+
+.form-input{
+    width: 100%;
+    min-height: var(--length-medium-2);
+    margin: var(--length-small-2) 0 0 0;
+    background-color: var(--main-color-primary);
+    color: var(--font-color-text);
+    border: 1px solid var(--main-color-terciary)
+}
+.form-input.secondary{
+    background-color: var(--main-color-secondary);
+}
+.input-label{
+    display: block;
+    margin: var(--length-small-2) 0
+}
+.forgot-label{
+    margin: -10px;
+    font-size: var(--length-small-3);
+    color: var(--main-color-terciary)
+}
+#forgot_label:hover{
+    color: var(--main-color-primary);
+    cursor: pointer;
+    
+}
+.forgot-label:hover{
+    color: var(--main-color-primary);
+    cursor: pointer;
+}
+#login-form, #register-form{
+    margin: var(--length-medium-2) 0;
+}
+#forgot_box{
+    background-color: var(--main-color-primary);
+    color: var(--font-color-text);
+    font-size: var(--length-medium-1);
+    cursor: auto;
+}
+.main-submit{
+    margin-top: 30px;
+    width: 100%
+}
+
+button[type="submit"]{
+    display: block;
+    /* margin: 40px auto; */
+}
+#forgot-box-content{
+    width: fit-content;
+    padding: 20px
+}
+.error-span{
+    font-weight: bold;
+    font-size:var(--length-medium-2);
+    margin: 10px 0;
+}

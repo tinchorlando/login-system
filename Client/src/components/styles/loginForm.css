@@ -1,0 +1,10 @@
+#forgot_checkbox{
+    display: none
+}
+#forgot_checkbox:checked ~ #forgot_modal{
+    display: block;
+    position: relative
+}
+#forgot_modal{
+    display: none;
+}

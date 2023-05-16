@@ -1,0 +1,39 @@
+#form{
+    margin: auto auto;
+    height: 100%
+}
+form{
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto auto;
+    padding-bottom: 2em;
+}
+label{
+    display: block;
+    margin: 0,5rem 0;
+}
+li{
+    text-align: center;
+}
+input{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+button[type="submit"]{
+    display: block;
+    margin: 10px auto;
+}
+#forgot_password{
+    margin: 2px auto
+}
+.bottom>*{
+    margin: 10px auto
+}
+.googleError{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 20px
+}
